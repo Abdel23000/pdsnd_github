@@ -1,7 +1,9 @@
-import time
+	import time
 import math
 import pandas as pd
 import numpy as np
+
+*********************************** Data *********************************** 
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -33,6 +35,8 @@ WEEK_DATA = { 'monday': 0,
                 'fri': 4,
                 'sat': 5,
                 'sun': 6}
+
+
 
 def get_filters():
     """
@@ -144,6 +148,11 @@ def load_data(city, month, day):
     df.drop('day_of_week',axis=1,inplace=True)
     df.drop('month',axis=1,inplace=True)
     return df
+
+
+
+
+
 
 
 def time_stats(df):

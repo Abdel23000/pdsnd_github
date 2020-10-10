@@ -153,7 +153,7 @@ def load_data(city, month, day):
 
 
 
-
+*********************************** Stats Calculation ***********************************
 
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
